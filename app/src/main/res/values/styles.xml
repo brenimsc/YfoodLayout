@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    Botao sem borda, sem CAIXA ALTA, e com a font family que escolhermos-->
+    <style name="yFoofButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/dongle</item>
+    </style>
+
+<!--    TextView, parent TextView Padrao do android, so mudando a fonte-->
+    <style name="yFoodTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/dongle</item>
+    </style>
+
+    <style name="yfoodTabLayoutTextAppearance" parent="Base.Widget.Design.TabLayout">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="rounded_shop">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+</resources>

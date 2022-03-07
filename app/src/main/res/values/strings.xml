@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YFood</string>
+    <string name="restaurants">Restaurantes</string>
+    <string name="marketplace">Mercados</string>
+    <string name="drinks">Bebidas</string>
+    <string name="dotted">&#8226;</string>
+    <string name="famous">Famosos no iFood</string>
+    <string name="seeMore">Ver mais</string>
+    <string name="shopCategory">\u2022 %1$s \u2022 %2$.1f km</string>
+    <string name="shopPrice">%1$s min \u2022 R$ %2$.2f</string>
+    <string name="shops">Lojas</string>
+    <string name="exploreMore">Explore mais com sua conta iFood</string>
+    <string name="enter">Entrar ou cadastrar-se</string>
+</resources>

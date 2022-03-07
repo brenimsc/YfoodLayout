@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imagemShop"
+        android:layout_width="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/red"
+        android:layout_height="70dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/rounded_shop"
+        app:strokeColor="@color/light_gray"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/shopDescription"
+        tools:text="Cacau Show"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imagemShop"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textStar"
+        app:layout_constraintStart_toStartOf="@id/shopDescription"
+        app:layout_constraintTop_toBottomOf="@id/shopDescription"
+        android:textColor="@color/gold"
+        android:textSize="20sp"
+        android:drawableTint="@color/gold"
+        tools:text="4.4"
+        app:drawableStartCompat="@drawable/ic_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textSubtitle"
+        app:layout_constraintStart_toEndOf="@id/textStar"
+        app:layout_constraintTop_toTopOf="@id/textStar"
+        android:textSize="20sp"
+        android:layout_marginStart="6dp"
+        tools:text="\u2022 Pizza \u2022 11,2 km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textPrice"
+        app:layout_constraintStart_toStartOf="@id/textStar"
+        app:layout_constraintTop_toBottomOf="@id/textStar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="17sp"
+        tools:text="60-70 min \u2022 R$22,70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageFavorites"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
